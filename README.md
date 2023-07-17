@@ -45,4 +45,4 @@ Links to official DevExpress documentation, forums, blog posts, and other helpfu
 
 ## TODO
 
-- [X] [Navigation Frame 1](./NavigationFrame1/README.md)
+- [X] [Navigation Frame 1](./NavigationFrame1)
