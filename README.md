@@ -46,3 +46,5 @@ Links to official DevExpress documentation, forums, blog posts, and other helpfu
 ## TODO
 
 - [X] [Navigation Frame 1](./NavigationFrame1)
+- [X] [Content Control 1](./ContentControl1)
+- 
