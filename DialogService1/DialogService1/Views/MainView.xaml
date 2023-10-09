@@ -1,0 +1,37 @@
+﻿<UserControl 
+    x:Class="DialogService1.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+    xmlns:ViewModels="clr-namespace:DialogService1.ViewModels"
+    xmlns:View="clr-namespace:DialogService1.Views"
+    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <ViewModels:MainViewModel/>
+    </UserControl.DataContext>
+    <dxmvvm:Interaction.Behaviors>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <View:RegistrationView/>
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:ThemedWindow">
+                    <Setter Property="Width" Value="300"/>
+                    <Setter Property="Height" Value="160"/>
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
+        <dx:DXMessageBoxService/>
+    </dxmvvm:Interaction.Behaviors>
+    
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <Button Command="{Binding DialogService1Command}">Service 1</Button>
+        </StackPanel>
+    </DockPanel>
+</UserControl>
