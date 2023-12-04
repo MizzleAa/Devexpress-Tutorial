@@ -1,7 +1,9 @@
 ﻿using CustomService1.Services.Interface;
 using DevExpress.Mvvm;
+using DevExpress.Mvvm.POCO;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Windows;
 using System.Windows.Input;
 
 namespace CustomService1.ViewModels
@@ -9,6 +11,7 @@ namespace CustomService1.ViewModels
     public class ViewModel1 : ViewModelBase
     {
         private readonly ICustomDispaterService customDispaterService = App.Current.Services.GetService<ICustomDispaterService>();
+        
         #region
         private string text = string.Empty;
         public string Text { get => text; set => SetValue(ref text, value); }
