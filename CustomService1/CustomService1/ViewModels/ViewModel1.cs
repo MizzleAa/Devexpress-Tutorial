@@ -1,9 +1,7 @@
 ﻿using CustomService1.Services.Interface;
 using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Windows;
 using System.Windows.Input;
 
 namespace CustomService1.ViewModels
