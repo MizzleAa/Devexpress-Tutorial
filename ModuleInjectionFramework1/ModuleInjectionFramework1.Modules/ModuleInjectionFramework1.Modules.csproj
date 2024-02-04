@@ -16,4 +16,8 @@
     
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ModuleInjectionFramework1.Common\ModuleInjectionFramework1.Common.csproj" />
+  </ItemGroup>
+
 </Project>

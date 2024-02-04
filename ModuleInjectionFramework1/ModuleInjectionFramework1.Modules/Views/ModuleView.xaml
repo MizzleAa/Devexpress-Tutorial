@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:ViewModels="clr-namespace:ModuleInjectionFramework1.Modules"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:ModuleInjectionFramework1.Modules" 
              mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance Type=ViewModels:ModuleViewModel}"
              d:DesignHeight="300" d:DesignWidth="300">
     <dxmvvm:Interaction.Behaviors>
         <dxmvvm:VisualStateService/>
     </dxmvvm:Interaction.Behaviors>
-    <Grid>
+    <Grid Background="LightCoral">
+        <Label Content="{Binding Path=Caption}"/>
     </Grid>
 </UserControl>
